@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SafetyLock</title>
+
+  <link href="./index.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main-container">
+
+    <div class="row">
+      <div class="column" id="form-section">
+        <div class="card">
+          <div class="card-heading">
+            <h1>SafetyLock</h1>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="input-row">
+                <label for="username">Url / Naam</label>
+                <input type="text" id="username" name="username" placeholder="Voer Gebruikersnaam/Website in">
+              </div>
+
+              <div class="input-row">
+                <label for="password">Wachtwoord</label>
+                <input type="password" id="password" name="password" placeholder="Voer wachtwoord in">
+              </div>
+
+              <input type="submit" value="Toevoegen">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="column" id="credentials-section">
+        <div class="card" id="credentials"></div>
+      </div>
+
+    </div>
+    <div class="row" style="flex-flow: column wrap; align-content: flex-end; margin-top: 10px;">
+      <div class="column">
+        <button class="switch-button" onclick="switchCards()">Switch</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>
